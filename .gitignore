@@ -1,0 +1,16 @@
+﻿# User specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+[Bb]in/
+[Oo]bj/
+
+# Rider ignored files
+/.idea
