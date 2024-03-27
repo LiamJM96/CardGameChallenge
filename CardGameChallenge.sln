@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGameChallenge.App", "sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGameChallenge.Shared", "CardGameChallenge.Shared\CardGameChallenge.Shared.csproj", "{C7D3EE25-EF49-430A-9333-3EBFAED62615}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGameChallenge.Tests", "src\CardGameChallenge.Tests\CardGameChallenge.Tests.csproj", "{AC2D10B8-775C-4CB9-8A0E-47D6277326EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{C7D3EE25-EF49-430A-9333-3EBFAED62615}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7D3EE25-EF49-430A-9333-3EBFAED62615}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7D3EE25-EF49-430A-9333-3EBFAED62615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC2D10B8-775C-4CB9-8A0E-47D6277326EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC2D10B8-775C-4CB9-8A0E-47D6277326EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC2D10B8-775C-4CB9-8A0E-47D6277326EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC2D10B8-775C-4CB9-8A0E-47D6277326EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

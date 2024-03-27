@@ -21,10 +21,6 @@ public partial class Deck
 
         foreach (var combination in arrayOfCards)
         {
-            // Should never be hit due to above regex but better to be safe than sorry :)
-            if (combination.Length != 2)
-                throw new CardException("Card code combination was not 2 characters long!");
-            
             if (combination.Equals("JK"))
             {
                 listOfCards.Add(new Card(combination, 0, true));
@@ -35,6 +31,7 @@ public partial class Deck
                 continue;
             }
 
+            // Don't need to worry about checking string length as it's validated by above regex
             var cardValue = combination[0] switch
             {
                 '2' => 2,
