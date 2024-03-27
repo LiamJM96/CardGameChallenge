@@ -1,12 +1,86 @@
-﻿<Window x:Class="CardGameChallenge.App.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:CardGameChallenge.App"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+﻿<Window
+    x:Class="CardGameChallenge.App.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:app="clr-namespace:CardGameChallenge.App"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Card Game Challenge"
+    Width="300"
+    Height="350"
+    d:DataContext="{d:DesignInstance app:MainWindowViewModel}"
+    mc:Ignorable="d">
+    <GroupBox>
 
-    </Grid>
+        <GroupBox.HeaderTemplate>
+            <DataTemplate>
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon
+                        Width="32"
+                        Height="32"
+                        VerticalAlignment="Center"
+                        Kind="CardsPlaying" />
+                    <TextBlock
+                        Margin="8,0,0,0"
+                        VerticalAlignment="Center"
+                        Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
+                        Text="Card Game Challenge" />
+                </StackPanel>
+            </DataTemplate>
+        </GroupBox.HeaderTemplate>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <TextBlock
+                Margin="4"
+                HorizontalAlignment="Left"
+                FontSize="16"
+                Text="Please enter your list of cards!" />
+
+            <TextBox
+                Grid.Row="1"
+                Margin="4"
+                Padding="12"
+                HorizontalAlignment="Left"
+                materialDesign:HintAssist.Background="White"
+                materialDesign:HintAssist.Hint="Enter list of cards in a comma-separated format"
+                FontSize="12"
+                Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                Text="{Binding CardsAsString}" />
+
+            <StackPanel
+                Grid.Row="2"
+                Margin="4"
+                HorizontalAlignment="Center"
+                Orientation="Horizontal">
+
+                <TextBlock FontSize="18" Text="Your card score is: " />
+                <TextBlock FontSize="18" Text="{Binding Score}" />
+
+            </StackPanel>
+
+            <TextBlock
+                Grid.Row="3"
+                HorizontalAlignment="Center"
+                Foreground="Red"
+                Text="{Binding ErrorMessage}" />
+
+            <Button
+                Grid.Row="4"
+                Margin="4"
+                HorizontalAlignment="Center"
+                Command="{Binding CalculateScoreCommand}"
+                Content="Calculate Score" />
+
+        </Grid>
+
+    </GroupBox>
 </Window>

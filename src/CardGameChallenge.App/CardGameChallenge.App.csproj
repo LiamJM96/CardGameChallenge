@@ -7,4 +7,13 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+      <PackageReference Include="MaterialDesignThemes" Version="5.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\CardGameChallenge.Shared\CardGameChallenge.Shared.csproj" />
+    </ItemGroup>
+
 </Project>
