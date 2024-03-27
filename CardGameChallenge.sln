@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGameChallenge.App", "src\CardGameChallenge.App\CardGameChallenge.App.csproj", "{E888D4AE-D908-48F5-ADAF-3B6E8BA6BBC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGameChallenge.Shared", "CardGameChallenge.Shared\CardGameChallenge.Shared.csproj", "{C7D3EE25-EF49-430A-9333-3EBFAED62615}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGameChallenge.Shared", "src\CardGameChallenge.Shared\CardGameChallenge.Shared.csproj", "{C7D3EE25-EF49-430A-9333-3EBFAED62615}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGameChallenge.Tests", "src\CardGameChallenge.Tests\CardGameChallenge.Tests.csproj", "{AC2D10B8-775C-4CB9-8A0E-47D6277326EE}"
 EndProject
